@@ -10,7 +10,14 @@ var a = 0,b = 1,c = 3
 // 类型注解，
 // 用于说明常量或者变量中要存储的值的类型
 // 形如：var|let 变量名称:类型
+var s = "hello"
 var d: String
+// 多行文本
+let m = """
+hello
+H
+IL
+"""
 
 // 输出 print()
 // 直接输出
@@ -91,3 +98,23 @@ assert(age >= 0, "A person's age cannot be less than zero")
 assert(age >= 0) // 忽略消息
 // 先决条件
 assert(age >= 0)
+
+
+// -------- 集合类型 ---
+
+// --------数组&字典--------
+var f = ["a", "b", "c"]
+f[1] = "d" // ["a", "d", "c"]
+f.append("e")
+
+var ms = [
+    "a": 1,
+    "b": 3
+]
+ms["e"] = 12
+// var ff = [] // 空数据
+// var mm = [:] // 空字典
+// 指定类型
+// 如果要将空数组或字典分配给新变量或其他没有任何类型信息的位置，则需要指定类型。如下：
+let arr: [String] = []
+let dict:[String: Float] = [:]
