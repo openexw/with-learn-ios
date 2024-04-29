@@ -13,4 +13,6 @@
 //    // 枚举定义放在这里
 //}
 
-
+enum:Sstring {
+    case f, a,f
+}
