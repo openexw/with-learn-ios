@@ -64,7 +64,7 @@ if anser == nil {
      print("convanserertedNumber has an String value of \(anser!).") // 使用 ! 强制解析可选值，若 anser 为 nil 贼会报错
 }
 
-*/
+
 // 可选绑定
 // 可选绑定（optional binding）判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。
 // 在 if 条件语句中使用常量和变量来创建一个可选绑定，仅在 if 语句的句中（body）中才能获取到值。
@@ -118,3 +118,4 @@ ms["e"] = 12
 // 如果要将空数组或字典分配给新变量或其他没有任何类型信息的位置，则需要指定类型。如下：
 let arr: [String] = []
 let dict:[String: Float] = [:]
+ */
