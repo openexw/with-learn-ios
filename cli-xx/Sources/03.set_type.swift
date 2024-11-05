@@ -16,20 +16,23 @@ aInts.remove(at: 0)
 //print("Hello, world!")
 
 // 集合
-var letters = Set<String>()
-letters.insert("hehe")
+var letters = Set<String>() // 声明集合 letters
+letters.insert("hehe") // 插入数据
+
 var letters1: Set = ["A", "B", "C"]
+// attr && method
 letters1.count
 letters1.isEmpty
-letters1.insert("aa")
-letters1.remove("A")
-letters1.contains("B")
-letters1.sorted()
+letters1.insert("aa") // 插入数据
+letters1.remove("A") // 删除数据
+letters1.contains("B") // 判断是否包含
+letters1.sorted() // 排序
 // 集合的交并差
 letters.symmetricDifference(letters1)
 letters.intersection(letters1)
 letters.union(letters1)
 letters.subtracting(letters1)
+
 
 
 

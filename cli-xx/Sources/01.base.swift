@@ -1,38 +1,4 @@
-/*
-// 常量
-let a = 12
-// 声明变量
-var b = 2334
-// 声明多个变量
-var a = 0,b = 1,c = 3
-// var a,b,c: Int // 添加注解类型
-
-// 类型注解，
-// 用于说明常量或者变量中要存储的值的类型
-// 形如：var|let 变量名称:类型
-var s = "hello"
-var d: String
-// 多行文本
-let m = """
-hello
-H
-IL
-"""
-
-// 输出 print()
-// 直接输出
-print("a ....", "sdsdsd")
-// 字符串插值, 通过 `\(变量名)` 来占位
-print("d=\(a)")
-
-// 整数
-let max = UInt8.max 
-
-// 自动类型推导
-// `let a = 12` a 会被推导成 Int 类型
-
-// 类型转换
-print(String(b) + ",hehe")
+import Cocoa
 
 // 类型别名
 typealias AudioSample = UInt16
@@ -63,7 +29,6 @@ if anser == nil {
     // some code
      print("convanserertedNumber has an String value of \(anser!).") // 使用 ! 强制解析可选值，若 anser 为 nil 贼会报错
 }
-
 
 // 可选绑定
 // 可选绑定（optional binding）判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。
@@ -102,20 +67,19 @@ assert(age >= 0)
 
 // -------- 集合类型 ---
 
-// --------数组&字典--------
-var f = ["a", "b", "c"]
-f[1] = "d" // ["a", "d", "c"]
-f.append("e")
+// --------数组--------
+var fx = Array<String>() // 声明数组 fx
+// var fx = [String]() // 声明数组 fx
+fx.append("sdd")
+print(fxp[0])
 
-var ms = [
-    "a": 1,
-    "b": 3
-]
-ms["e"] = 12
-// var ff = [] // 空数据
-// var mm = [:] // 空字典
-// 指定类型
-// 如果要将空数组或字典分配给新变量或其他没有任何类型信息的位置，则需要指定类型。如下：
-let arr: [String] = []
-let dict:[String: Float] = [:]
- */
+fx.count
+fx.sorted()
+fx.contains("sdd")
+fx.remove(at: 0)
+
+
+var f = ["a", "b", "c"] // string array
+f[1] = "d" // ["a", "d", "c"] // modify data
+f.append("e") // 追加数据
+f[1] // 获取数据
