@@ -46,7 +46,7 @@ let max = UInt8.max
 // 长整数定义
 let a = 1_000_00
 let a = 100
-let b = a - 10
+let b = a - 10``
 var c = 1000
 print(c.isMultiple(of: 3)) // 判断是否是3的倍数
 
