@@ -1,6 +1,6 @@
 
 func greter(str:String) -> String{
-    return "Hello, "+ str+"!"
+    return "Hello, "+str+"!"
 }
 
 // 利用元组返回多个值
@@ -44,7 +44,7 @@ if let b = minMax(array: [1, 10, -90, 12]) {
 
 // 默认值，设置 a 默认为 1
 func add(a Int, b Int = 1) -> Int {
-    return a +b 
+    return a +b
 }
 // 忽略参数
 func div(_ Int, b Int) -> Float? {

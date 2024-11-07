@@ -9,7 +9,7 @@ enum fruit {
     case apple,banana
 }
 
-var f =fruit.apple
+var f: fruit = fruit.apple
 f = .banana // 当枚举一旦声明，再次为其赋值可以省略枚举类型名
 
 // 使用 switch 枚举所有类型
