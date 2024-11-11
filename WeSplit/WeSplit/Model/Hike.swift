@@ -29,5 +29,5 @@ struct Hike: Codable,Hashable,Identifiable {
         var pace: Range<Double>
         var heartRate: Range<Double>
     }
-    
+
 }
