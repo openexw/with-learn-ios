@@ -2,23 +2,27 @@
 //  ContentView.swift
 //  WatchLandmark Watch App
 //
-//  Created by 7yue on 2024/11/11.
+//  Created by 7yue on 2024/11/12.
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            LandmarkList()
+                .task {
+                    let center = UNUserNotificationCenter.current()
+                    _ = try? await center.requestAuthorization(
+                        options: [.alert, .sound, .badge]
+                    )
+                }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
