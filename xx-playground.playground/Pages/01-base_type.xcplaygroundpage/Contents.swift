@@ -54,6 +54,7 @@ var (name1, _) = pen1
 // Optional类型是对普通类型的包装，使用时需要通过 `!` 进行拆包
 // swift 中使用了一个没有赋值的变量程序会报错并停止运行。对于声明后赋值的场景，我们可以使用 可选值类型
 // 若没有 ？ 下面的使用会报错
+Int("a111") // 返回的是 Optional类型
 var obj : String?
 if obj != nil {
     // somo code
@@ -82,5 +83,3 @@ var o_pay:orderStats = 1
 //====
 
 
-
-MemoryLayout<String>.size
