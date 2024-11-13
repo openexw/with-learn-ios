@@ -83,7 +83,6 @@
 		4D41E1C72CDD1EE700A04F1B /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		4DA884232CDD242900A44016 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		4DA884282CDD255800A44016 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
-		4DA8842A2CDD26F300A44016 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		4DA8842D2CDD2A0000A44016 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		4DA8842F2CDD2AD700A44016 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		4DA884332CE06D1900A44016 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -168,7 +167,6 @@
 				4DA884262CDD24AE00A44016 /* Model */,
 				4DA884252CDD249000A44016 /* View */,
 				4D41E19D2CDBD54200A04F1B /* Preview Content */,
-				4DA8842A2CDD26F300A44016 /* landmarkData.json */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
@@ -201,8 +199,8 @@
 		4DA884252CDD249000A44016 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4DA8846A2CE10F8200A44016 /* Page */,
 				4D41E1992CDBD54100A04F1B /* ContentView.swift */,
+				4DA8846A2CE10F8200A44016 /* Page */,
 				4DA884632CE0F15200A44016 /* Fishing */,
 				4DA8845A2CE08E3600A44016 /* Profiles */,
 				4DA884482CE07CF000A44016 /* Hikes */,
