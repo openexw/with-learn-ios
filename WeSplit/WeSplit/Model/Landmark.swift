@@ -17,12 +17,12 @@ struct Landmark:Hashable,Codable,Identifiable {
     var description:String
     var isFavorite: Bool
     var isFeatured: Bool
-    
+
     private var imageName:String
     var image:Image{
         Image(imageName)
     }
-    
+
     var featureImage: Image? {
         isFeatured ? Image(imageName+"_feature") : nil
     }
@@ -32,7 +32,7 @@ struct Landmark:Hashable,Codable,Identifiable {
         case rivers = "Rivers"
         case mountains = "Mountains"
     }
-    
+
 
    private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
@@ -40,7 +40,7 @@ struct Landmark:Hashable,Codable,Identifiable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
-    
+
 
     struct Coordinates: Hashable, Codable {
         var latitude: Double
