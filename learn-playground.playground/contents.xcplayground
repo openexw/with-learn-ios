@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+<playground version='6.0' target-platform='macos' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='learn-xcode-playground'/>
         <page name='00-var-const'/>
         <page name='01-base_type'/>
         <page name='02-string'/>
@@ -10,5 +11,7 @@
         <page name='06-enum'/>
         <page name='07-adv-op'/>
         <page name='08-class-and-struct'/>
+        <page name='09-mem'/>
+        <page name='10-cast-type-and-generics'/>
     </pages>
 </playground>

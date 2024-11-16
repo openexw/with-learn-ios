@@ -1,3 +1,5 @@
+// Swift 中 Array、String、Dictionary、Set 都是采用结构体来实现的
+// 所以这些值在传递是时值传递，会复制一份
 //====== Array
 // 可以存放任意类型的数据，但是所有元素类型必须统一
 // 声明数组
@@ -135,5 +137,3 @@ for (k,v) in d1 { // 按值遍历
 for item in d1.keys.sorted(by: >){ // 返回元组
     print(item)
 }
-
-

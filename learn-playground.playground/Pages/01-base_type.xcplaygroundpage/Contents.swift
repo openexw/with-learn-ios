@@ -1,3 +1,14 @@
+/*:
+ [< Previous](@previous)            [Home](learn-xcode-playground)          [Next>](@next)
+ ## 基础类型
+ 主要介绍以下内容：
+ - 元组
+ - Optional 类型
+ - 类型别名
+ - Int
+ - Double
+ - Bool
+ */
 import Cocoa
 import SwiftUI
 
