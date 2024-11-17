@@ -15,6 +15,13 @@
  ### 目录
  > 通过 `[标题](playground page name)` 来实现page之前的跳转
  
+ iOS 开发需要掌握的技术：
+ 1. Swift 语言基础
+ 2. 界面卡法
+ 3. 网络处理技术
+ 4. 数据处理和存储技术
+ 
+ ### Part1 Swift 基础
  - [var 和 const](00-var-const)
  - [base type]()01-base_type
  - [string](02-string)
@@ -24,7 +31,13 @@
  - [枚举](06-enum)
  - [高级运算符](07-adv-op)
  - [结构体和类](08-class-and-struct)
+ - [内存管理](09-mem)
+ - [类型转换和泛型](10-cast-type-and-generics)
+ - [Swift新特性](11-swfit5-feature)
  
+ ### Part2 UIKit
+
+ ### Part3 SwiftUI
  ### 上一页和下一页
  - `//: [Previous](@previous)` 上一页
  - `//: [Next](@next)` 下一页
