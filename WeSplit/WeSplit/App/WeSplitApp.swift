@@ -18,5 +18,8 @@ struct WeSplitApp: App {
     #if os(watchOS)
     WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
     #endif
+//    #if os(macos)
+////        SettingView
+//    #endif
     }
 }

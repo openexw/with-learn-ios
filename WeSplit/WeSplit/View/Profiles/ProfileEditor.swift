@@ -38,6 +38,17 @@ struct ProfileEditor: View {
             DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
                 Text("Goal Date")
             }
+            
+            Form {
+                Section {
+                    Text("Hello, world!")
+                }
+
+                Section {
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                }
+            }
         }
     }
 }
