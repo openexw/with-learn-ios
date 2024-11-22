@@ -13,7 +13,7 @@ struct design_code_xApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
