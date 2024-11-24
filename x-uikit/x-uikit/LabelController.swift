@@ -10,6 +10,8 @@ import UIKit
 class LabelController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
+        self.title = "Label"
         let label = UILabel(frame: CGRect(x: 20, y: 120, width: 200, height: 30))
         label.text = "点我"
         self.view.addSubview(label)
@@ -48,17 +50,23 @@ class LabelController: UIViewController {
          link：跳转链接
          underlineColor：下划线颜色
          */
+        
+        var btnItem = UIBarButtonItem(title: "返回", style: .plain, target: self, action: #selector(pop))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func pop(){
+        self.navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

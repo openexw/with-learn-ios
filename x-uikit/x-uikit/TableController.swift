@@ -8,17 +8,26 @@
 import UIKit
 
 class TableController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = "Home"
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
+        let barBtnItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(click))
+        self.navigationItem.leftBarButtonItem = barBtnItem
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
-
+    
+    @objc func click() {
+        let vc = LabelController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

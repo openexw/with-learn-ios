@@ -15,16 +15,16 @@ public class Trans {
 }
 
 // 小汽车：继承
-public class Car: Trans {
-    var type: Int // 类型
-    override func drive()  {
-       super.drive() // 调用父类的方法
-        print("在路上行驶了 10 km")
-        self.perol -= 1
-    }
-    init(type: Int) {
-        self.type = type
-    }
-}
+//public class Car: Trans {
+//    var type: Int // 类型
+//    override func drive()  {
+//       super.drive() // 调用父类的方法
+//        print("在路上行驶了 10 km")
+//        self.perol -= 1
+//    }
+//    init(type: Int) {
+//        self.type = type
+//    }
+//}
 
 

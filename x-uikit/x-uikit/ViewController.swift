@@ -29,8 +29,6 @@ class ViewController: UIViewController,DetailPtotcool {
         // Do any additional setup after loading the view.
         lable = UILabel(frame: CGRect(x: 20, y: 50, width: 200, height: 30))
         self.view.addSubview(lable!)
-        
-        
     }
     
 }

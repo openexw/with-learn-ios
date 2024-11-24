@@ -9,5 +9,7 @@ import UIKit
 import PlaygroundSupport
 
 public func statr(){
-//    La
+    let btnView = ButtonViewController()
+    let navVC = UINavigationController(rootViewController: btnView)
+    PlaygroundPage.current.liveView = navVC
 }
