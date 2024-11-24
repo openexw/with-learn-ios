@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ExpHomeView: View {
     var body: some View {
         TabView{
             ContentView().tabItem {

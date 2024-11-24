@@ -22,7 +22,7 @@ struct PracticeView: View {
                     NavigationLink(destination: CanvaAnimView()) {
                         Label("Timeline", systemImage: "compass.drawing")
                     }
-                    NavigationLink(destination: HomeView()) {
+                    NavigationLink(destination: ExpHomeView()) {
                         Label("TabBar", systemImage: "house")
                     }
                 }

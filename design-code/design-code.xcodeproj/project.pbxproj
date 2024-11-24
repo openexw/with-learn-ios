@@ -20,9 +20,13 @@
 		4DB84BC42CF3018B005E020F /* CanvaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BC32CF3018B005E020F /* CanvaView.swift */; };
 		4DB84BC62CF301F3005E020F /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BC52CF301F3005E020F /* PracticeView.swift */; };
 		4DB84BC82CF31872005E020F /* CanvaAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BC72CF31872005E020F /* CanvaAnimView.swift */; };
-		4DB84BCB2CF31DA1005E020F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BCA2CF31DA1005E020F /* HomeView.swift */; };
+		4DB84BCB2CF31DA1005E020F /* ExpHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BCA2CF31DA1005E020F /* ExpHomeView.swift */; };
 		4DB84BCD2CF31F08005E020F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BCC2CF31F08005E020F /* TabBar.swift */; };
 		4DB84BCF2CF325E6005E020F /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BCE2CF325E6005E020F /* Tab.swift */; };
+		4DB84BD12CF33FA8005E020F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BD02CF33FA8005E020F /* HomeView.swift */; };
+		4DB84BD82CF34449005E020F /* FeatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BD72CF34449005E020F /* FeatureItem.swift */; };
+		4DB84BDA2CF3461F005E020F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BD92CF3461F005E020F /* NavigationBar.swift */; };
+		4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,16 +56,20 @@
 		4DB84BA72CF2EBC6005E020F /* design-codeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "design-codeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB84BAB2CF2EBC6005E020F /* design_codeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_codeUITests.swift; sourceTree = "<group>"; };
 		4DB84BAD2CF2EBC6005E020F /* design_codeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_codeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4DB84BBA2CF2EBF8005E020F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../design-code-x/design-code-x/ContentView.swift"; sourceTree = "<group>"; };
-		4DB84BBC2CF2EC01005E020F /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = "../../design-code-x/design-code-x/Styles.swift"; sourceTree = "<group>"; };
-		4DB84BBE2CF2EC09005E020F /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountView.swift; path = "../../design-code-x/design-code-x/AccountView.swift"; sourceTree = "<group>"; };
+		4DB84BBA2CF2EBF8005E020F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DB84BBC2CF2EC01005E020F /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		4DB84BBE2CF2EC09005E020F /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		4DB84BC02CF2EF03005E020F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4DB84BC32CF3018B005E020F /* CanvaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaView.swift; sourceTree = "<group>"; };
 		4DB84BC52CF301F3005E020F /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		4DB84BC72CF31872005E020F /* CanvaAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaAnimView.swift; sourceTree = "<group>"; };
-		4DB84BCA2CF31DA1005E020F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DB84BCA2CF31DA1005E020F /* ExpHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpHomeView.swift; sourceTree = "<group>"; };
 		4DB84BCC2CF31F08005E020F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4DB84BCE2CF325E6005E020F /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		4DB84BD02CF33FA8005E020F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DB84BD72CF34449005E020F /* FeatureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItem.swift; sourceTree = "<group>"; };
+		4DB84BD92CF3461F005E020F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +120,14 @@
 		4DB84B8F2CF2EBC5005E020F /* design-code */ = {
 			isa = PBXGroup;
 			children = (
-				4DB84B962CF2EBC6005E020F /* Preview Content */,
-				4DB84BBE2CF2EC09005E020F /* AccountView.swift */,
-				4DB84BBC2CF2EC01005E020F /* Styles.swift */,
-				4DB84BBA2CF2EBF8005E020F /* ContentView.swift */,
 				4DB84B902CF2EBC5005E020F /* design_codeApp.swift */,
 				4DB84B942CF2EBC6005E020F /* Assets.xcassets */,
-				4DB84BC22CF2EF0F005E020F /* Exp */,
-				4DB84BC92CF31D5F005E020F /* TabBar */,
+				4DB84BD22CF34234005E020F /* App */,
+				4DB84BD32CF34252005E020F /* Styles */,
+				4DB84BD42CF34260005E020F /* Model */,
+				4DB84BD62CF342A2005E020F /* Components */,
+				4DB84BD52CF34270005E020F /* Views */,
+				4DB84B962CF2EBC6005E020F /* Preview Content */,
 			);
 			path = "design-code";
 			sourceTree = "<group>";
@@ -152,22 +160,58 @@
 		4DB84BC22CF2EF0F005E020F /* Exp */ = {
 			isa = PBXGroup;
 			children = (
-				4DB84BC02CF2EF03005E020F /* ProfileView.swift */,
 				4DB84BC32CF3018B005E020F /* CanvaView.swift */,
 				4DB84BC52CF301F3005E020F /* PracticeView.swift */,
 				4DB84BC72CF31872005E020F /* CanvaAnimView.swift */,
-				4DB84BCA2CF31DA1005E020F /* HomeView.swift */,
+				4DB84BCA2CF31DA1005E020F /* ExpHomeView.swift */,
 			);
 			path = Exp;
 			sourceTree = "<group>";
 		};
-		4DB84BC92CF31D5F005E020F /* TabBar */ = {
+		4DB84BD22CF34234005E020F /* App */ = {
 			isa = PBXGroup;
 			children = (
 				4DB84BCC2CF31F08005E020F /* TabBar.swift */,
-				4DB84BCE2CF325E6005E020F /* Tab.swift */,
+				4DB84BBA2CF2EBF8005E020F /* ContentView.swift */,
 			);
-			path = TabBar;
+			path = App;
+			sourceTree = "<group>";
+		};
+		4DB84BD32CF34252005E020F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4DB84BBC2CF2EC01005E020F /* Styles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		4DB84BD42CF34260005E020F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DB84BCE2CF325E6005E020F /* Tab.swift */,
+				4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DB84BD52CF34270005E020F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DB84BC22CF2EF0F005E020F /* Exp */,
+				4DB84BC02CF2EF03005E020F /* ProfileView.swift */,
+				4DB84BBE2CF2EC09005E020F /* AccountView.swift */,
+				4DB84BD02CF33FA8005E020F /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DB84BD62CF342A2005E020F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4DB84BD72CF34449005E020F /* FeatureItem.swift */,
+				4DB84BD92CF3461F005E020F /* NavigationBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,15 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB84BCB2CF31DA1005E020F /* HomeView.swift in Sources */,
+				4DB84BD82CF34449005E020F /* FeatureItem.swift in Sources */,
+				4DB84BCB2CF31DA1005E020F /* ExpHomeView.swift in Sources */,
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
 				4DB84BC12CF2EF03005E020F /* ProfileView.swift in Sources */,
 				4DB84BBD2CF2EC01005E020F /* Styles.swift in Sources */,
 				4DB84BC62CF301F3005E020F /* PracticeView.swift in Sources */,
+				4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */,
 				4DB84BCF2CF325E6005E020F /* Tab.swift in Sources */,
 				4DB84BBF2CF2EC09005E020F /* AccountView.swift in Sources */,
 				4DB84BC42CF3018B005E020F /* CanvaView.swift in Sources */,
+				4DB84BD12CF33FA8005E020F /* HomeView.swift in Sources */,
+				4DB84BDA2CF3461F005E020F /* NavigationBar.swift in Sources */,
 				4DB84BC82CF31872005E020F /* CanvaAnimView.swift in Sources */,
 				4DB84BCD2CF31F08005E020F /* TabBar.swift in Sources */,
 			);

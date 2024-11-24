@@ -1,14 +1,13 @@
 //
-//  ContentView.swift
-//  design-code-x
+//  FeatureIten.swift
+//  design-code
 //
-//  Created by 薄荷 on 2024/11/22.
+//  Created by 7yue on 2024/11/24.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {
+struct FeatureItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0){
             Spacer()
@@ -68,7 +67,6 @@ struct ContentView: View {
     }
 }
 
-
 #Preview {
-    ContentView()
+    FeatureItem()
 }
