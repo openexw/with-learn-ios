@@ -27,6 +27,8 @@
 		4DB84BD82CF34449005E020F /* FeatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BD72CF34449005E020F /* FeatureItem.swift */; };
 		4DB84BDA2CF3461F005E020F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BD92CF3461F005E020F /* NavigationBar.swift */; };
 		4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */; };
+		4DB84BDE2CF60B5E005E020F /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */; };
+		4DB84BE02CF6129D005E020F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDF2CF6129D005E020F /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		4DB84BD72CF34449005E020F /* FeatureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItem.swift; sourceTree = "<group>"; };
 		4DB84BD92CF3461F005E020F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		4DB84BDF2CF6129D005E020F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4DB84BBC2CF2EC01005E020F /* Styles.swift */,
+				4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			children = (
 				4DB84BCE2CF325E6005E020F /* Tab.swift */,
 				4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */,
+				4DB84BDF2CF6129D005E020F /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,12 +355,14 @@
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
 				4DB84BC12CF2EF03005E020F /* ProfileView.swift in Sources */,
+				4DB84BE02CF6129D005E020F /* Course.swift in Sources */,
 				4DB84BBD2CF2EC01005E020F /* Styles.swift in Sources */,
 				4DB84BC62CF301F3005E020F /* PracticeView.swift in Sources */,
 				4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */,
 				4DB84BCF2CF325E6005E020F /* Tab.swift in Sources */,
 				4DB84BBF2CF2EC09005E020F /* AccountView.swift in Sources */,
 				4DB84BC42CF3018B005E020F /* CanvaView.swift in Sources */,
+				4DB84BDE2CF60B5E005E020F /* AnimatableFontModifier.swift in Sources */,
 				4DB84BD12CF33FA8005E020F /* HomeView.swift in Sources */,
 				4DB84BDA2CF3461F005E020F /* NavigationBar.swift in Sources */,
 				4DB84BC82CF31872005E020F /* CanvaAnimView.swift in Sources */,
