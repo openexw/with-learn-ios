@@ -13,6 +13,9 @@ struct CourseView: View {
     @Binding var show: Bool
     @EnvironmentObject var model: Model
     @State var appear = [false,false,false]
+    @State var viewState: CGSize = .zero
+    @State var isDraggable = true
+    
     var body: some View {
         ZStack {
             ScrollView {
@@ -23,10 +26,17 @@ struct CourseView: View {
                     .opacity( appear[2] ? 1 : 0)
             }
             .background(Color("Background"))
+            // 设置右滑后的背景以及主体
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous)) // 主体设置为圆角
+            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10) // 设置主体阴影
+            .scaleEffect(viewState.width / -500 + 1) // 设置主体缩放
+            .background(.black.opacity(viewState.width / 500)) // 设置右滑后的背景颜色
+            .background(.ultraThinMaterial)
+            .gesture(isDraggable ? drag : nil) // 添加手势处理
+            .gesture(isDraggable ? drag : nil)
             .ignoresSafeArea()
             
             button
-            
         }
         .onAppear{
             fadeIn()
@@ -144,6 +154,34 @@ struct CourseView: View {
         .offset(y: 250)
         .padding(20)
     }
+    
+    var drag : some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local)
+            .onChanged{ value in
+                // 只有当 width > 0 时赋值
+                guard value.translation.width > 0 else {return }
+                
+                // 检测只有当位移小于 100 时才会赋值
+                if value.startLocation.x < 100 {
+                    withAnimation(.closeCard){
+                        viewState = value.translation
+                    }
+                }
+                if value.startLocation.x > 120 { // 超过 120 直接关闭页面
+                    close()
+                }
+            }
+            .onEnded { value in // 手指松开时的状态
+                if viewState.width > 80 {
+                    close()
+                } else {
+                    withAnimation(.closeCard) {
+                        viewState = .zero
+                    }
+                }
+                
+            }
+    }
     func fadeIn(){
         withAnimation(.easeOut.delay(0.3)){
             appear[0] = true
@@ -160,6 +198,17 @@ struct CourseView: View {
         appear[0] = false
         appear[1] = false
         appear[2] = false
+    }
+    
+    func close() {
+        withAnimation(.closeCard.delay(0.3) ){ // 当 width 超过 80 时关闭该 view，与 x 按钮功能一致
+            show.toggle()
+            model.showDetial.toggle()
+        }
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        isDraggable = false
     }
 }
 
