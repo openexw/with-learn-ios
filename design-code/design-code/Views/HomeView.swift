@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
     
     var body: some View {
         ZStack {
@@ -18,23 +20,32 @@ struct HomeView: View {
                 
                 featured
                 
-                Color.clear.frame(height: 1000)
+                Text("courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
+                
+                if !show {
+                    CourseItem(namespace: namespace, show: $show)
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)){
+                                show.toggle()
+                            }
+                        }
+                }
             }
             .coordinateSpace(name:"home")
-            .onPreferenceChange(PreferenceKeys.self, perform: { value in
-                withAnimation(.easeInOut){
-                    if value < 0 {
-                        hasScrolled = true
-                    }else{
-                        hasScrolled = false
-                    }
-                }
-            })
+            
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 70)
             })
             .overlay{
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
+            }
+            if show {
+                CourseView(namespace: namespace, show: $show)
+                
             }
         }
     }
@@ -44,6 +55,17 @@ struct HomeView: View {
             //                Text("\(proxy.frame(in: .global).minY)")
             Color.clear.preference(key: PreferenceKeys.self, value: proxy.frame(in: .named("home")).minY)
         }
+        // fix: 导航栏动画失效
+        // 从 ScrollView 移动到 GeometryReader
+        .onPreferenceChange(PreferenceKeys.self, perform: { value in
+            withAnimation(.easeInOut){
+                if value < 0 {
+                    hasScrolled = true
+                }else{
+                    hasScrolled = false
+                }
+            }
+        })
         .frame(height: 0)
     }
     var featured:some View {
@@ -68,7 +90,7 @@ struct HomeView: View {
                         )
                     
                         .shadow(color:Color("Shadow").opacity(0.3),radius: 10, x: 0, y:10)
-//                    Text("\(proxy.frame(in: .global).minX/10)")
+                    //                    Text("\(proxy.frame(in: .global).minX/10)")
                 }
             }
         }

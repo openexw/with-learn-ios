@@ -29,6 +29,9 @@
 		4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */; };
 		4DB84BDE2CF60B5E005E020F /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */; };
 		4DB84BE02CF6129D005E020F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BDF2CF6129D005E020F /* Course.swift */; };
+		4DB84BE22CFC2BDB005E020F /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BE12CFC2BDB005E020F /* MatchedView.swift */; };
+		4DB84BE42CFC3D88005E020F /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BE32CFC3D88005E020F /* CourseItem.swift */; };
+		4DB84BE62CFC412B005E020F /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84BE52CFC412B005E020F /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		4DB84BDF2CF6129D005E020F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		4DB84BE12CFC2BDB005E020F /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		4DB84BE32CFC3D88005E020F /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		4DB84BE52CFC412B005E020F /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,7 @@
 		4DB84BC22CF2EF0F005E020F /* Exp */ = {
 			isa = PBXGroup;
 			children = (
+				4DB84BE12CFC2BDB005E020F /* MatchedView.swift */,
 				4DB84BC32CF3018B005E020F /* CanvaView.swift */,
 				4DB84BC52CF301F3005E020F /* PracticeView.swift */,
 				4DB84BC72CF31872005E020F /* CanvaAnimView.swift */,
@@ -207,6 +214,7 @@
 				4DB84BC02CF2EF03005E020F /* ProfileView.swift */,
 				4DB84BBE2CF2EC09005E020F /* AccountView.swift */,
 				4DB84BD02CF33FA8005E020F /* HomeView.swift */,
+				4DB84BE52CFC412B005E020F /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 			children = (
 				4DB84BD72CF34449005E020F /* FeatureItem.swift */,
 				4DB84BD92CF3461F005E020F /* NavigationBar.swift */,
+				4DB84BE32CFC3D88005E020F /* CourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -351,12 +360,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB84BD82CF34449005E020F /* FeatureItem.swift in Sources */,
+				4DB84BE42CFC3D88005E020F /* CourseItem.swift in Sources */,
 				4DB84BCB2CF31DA1005E020F /* ExpHomeView.swift in Sources */,
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
 				4DB84BC12CF2EF03005E020F /* ProfileView.swift in Sources */,
 				4DB84BE02CF6129D005E020F /* Course.swift in Sources */,
+				4DB84BE62CFC412B005E020F /* CourseView.swift in Sources */,
 				4DB84BBD2CF2EC01005E020F /* Styles.swift in Sources */,
+				4DB84BE22CFC2BDB005E020F /* MatchedView.swift in Sources */,
 				4DB84BC62CF301F3005E020F /* PracticeView.swift in Sources */,
 				4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */,
 				4DB84BCF2CF325E6005E020F /* Tab.swift in Sources */,
