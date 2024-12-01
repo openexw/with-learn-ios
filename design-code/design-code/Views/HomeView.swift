@@ -11,6 +11,9 @@ struct HomeView: View {
     @State var hasScrolled = false
     @Namespace var namespace
     @State var show = false
+    @State var showStatusBar = false
+    @State var selectedId:UUID = UUID()
+    @EnvironmentObject var model: Model
     
     var body: some View {
         ZStack {
@@ -27,12 +30,19 @@ struct HomeView: View {
                     .padding(.horizontal, 20)
                 
                 if !show {
-                    CourseItem(namespace: namespace, show: $show)
-                        .onTapGesture {
-                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)){
-                                show.toggle()
-                            }
-                        }
+                    cards
+                }  else {
+                    // 占位符，当关闭页面时，没有占位符，会导致首页重新刷新回到顶部，回到顶部
+                    // 上面判断的是只有 !show 才会从 model 中加载 courseItem，当 show == true 时就没有位置去渲染该模块
+                    ForEach(courses) { course in
+                        Rectangle()
+                            .fill(.white)
+                            .frame(height: 300)
+                            .cornerRadius(30)
+                            .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
+                            .opacity(0.3)
+                            .padding(.horizontal, 30)
+                    }
                 }
             }
             .coordinateSpace(name:"home")
@@ -43,9 +53,18 @@ struct HomeView: View {
             .overlay{
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
             }
+            .statusBar(hidden: !showStatusBar)
+            .onChange(of: show) { _, newVal in
+                withAnimation(.closeCard){
+                    if newVal {
+                        showStatusBar = false
+                    } else{
+                        showStatusBar = true
+                    }
+                }
+            }
             if show {
-                CourseView(namespace: namespace, show: $show)
-                
+               detail
             }
         }
     }
@@ -70,7 +89,7 @@ struct HomeView: View {
     }
     var featured:some View {
         TabView{
-            ForEach(courses) { course in
+            ForEach(featuredCourses) { course in
                 GeometryReader { proxy in // 使用 GeometryReader 后会导致检测的区域只包含 FeatureItem 这个容器，需要通过设置 padding 来增加容器
                     let minX = proxy.frame(in: .global).minX
                     FeatureItem(course: course)
@@ -98,8 +117,37 @@ struct HomeView: View {
         .frame(height: 430)
         .background(Image("Blob 1").offset(x:250, y:-100))
     }
+    
+    var cards: some View {
+        ForEach(courses) { course in
+            CourseItem(namespace: namespace, show: $show, course: course)
+                .onTapGesture {
+                    withAnimation(.openCard){
+                        show.toggle()
+                        model.showDetial.toggle()
+                        
+                        showStatusBar = false
+                        selectedId = course.id
+                    }
+                }
+        }
+    }
+    
+    var detail : some View {
+        ForEach(courses) { course in
+            if course.id == selectedId {
+                CourseView(namespace: namespace, course: course, show: $show)
+                    .zIndex(1) // 默认为 0
+                    .transition(.asymmetric(
+                        insertion: .opacity.animation(.easeInOut(duration:0.1)), // 进入的动画
+                        removal: .opacity.animation(.easeInOut(duration:0.3).delay(0.2)))//离开时的动画
+                    )
+            }
+        }
+    }
 }
 
 #Preview {
     HomeView()
+        .environmentObject(Model())
 }

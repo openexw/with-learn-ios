@@ -25,6 +25,19 @@ struct PracticeView: View {
                     NavigationLink(destination: ExpHomeView()) {
                         Label("TabBar", systemImage: "house")
                     }
+                    NavigationLink(destination: StateBar()) {
+                        Label("StatusBar", systemImage: "house")
+                    }
+                    // TODO:
+                    NavigationLink(destination: ExpHomeView()) {
+                        Label("Combine", systemImage: "house")
+                    }
+                    NavigationLink(destination: ExpHomeView()) {
+                        Label("Animation", systemImage: "line.3.crossed.swirl.circle")
+                    }
+                    NavigationLink(destination: ExpHomeView()) {
+                        Label("Layout", systemImage: "square.stack.3d.down.forward")
+                    }
                 }
                 .listRowSeparator(.hidden)
                 .listRowSeparatorTint(.blue)
