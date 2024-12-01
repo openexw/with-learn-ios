@@ -29,21 +29,24 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                 
-                if !show {
-                    cards
-                }  else {
-                    // 占位符，当关闭页面时，没有占位符，会导致首页重新刷新回到顶部，回到顶部
-                    // 上面判断的是只有 !show 才会从 model 中加载 courseItem，当 show == true 时就没有位置去渲染该模块
-                    ForEach(courses) { course in
-                        Rectangle()
-                            .fill(.white)
-                            .frame(height: 300)
-                            .cornerRadius(30)
-                            .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
-                            .opacity(0.3)
-                            .padding(.horizontal, 30)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 300),spacing: 20)], spacing: 20){
+                    if !show {
+                        cards
+                    }  else {
+                        // 占位符，当关闭页面时，没有占位符，会导致首页重新刷新回到顶部，回到顶部
+                        // 上面判断的是只有 !show 才会从 model 中加载 courseItem，当 show == true 时就没有位置去渲染该模块
+                        ForEach(courses) { course in
+                            Rectangle()
+                                .fill(.white)
+                                .frame(height: 300)
+                                .cornerRadius(30)
+                                .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
+                                .opacity(0.3)
+                                .padding(.horizontal, 30)
+                        }
                     }
                 }
+                .padding(20)
             }
             .coordinateSpace(name:"home")
             
@@ -93,6 +96,8 @@ struct HomeView: View {
                 GeometryReader { proxy in // 使用 GeometryReader 后会导致检测的区域只包含 FeatureItem 这个容器，需要通过设置 padding 来增加容器
                     let minX = proxy.frame(in: .global).minX
                     FeatureItem(course: course)
+                        .frame(maxWidth: 500)
+                        .frame(maxWidth: .infinity)
                         .padding(.vertical, 40)
                         .rotation3DEffect(
                             .degrees(minX / -10),
