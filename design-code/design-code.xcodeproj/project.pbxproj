@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4D68266C2CFDD84E00B1A12E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68266B2CFDD84E00B1A12E /* SearchView.swift */; };
 		4D68266E2CFDE06300B1A12E /* suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68266D2CFDE06300B1A12E /* suggestions.swift */; };
+		4D6826702CFF2BFD00B1A12E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68266F2CFF2BFD00B1A12E /* SignUpView.swift */; };
+		4D6826722CFF36B800B1A12E /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6826712CFF36B800B1A12E /* InputStyle.swift */; };
+		4D6826742CFF389400B1A12E /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6826732CFF389400B1A12E /* AngularButtonStyle.swift */; };
 		4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84B902CF2EBC5005E020F /* design_codeApp.swift */; };
 		4DB84B952CF2EBC6005E020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B942CF2EBC6005E020F /* Assets.xcassets */; };
 		4DB84B982CF2EBC6005E020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B972CF2EBC6005E020F /* Preview Assets.xcassets */; };
@@ -59,6 +62,9 @@
 /* Begin PBXFileReference section */
 		4D68266B2CFDD84E00B1A12E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4D68266D2CFDE06300B1A12E /* suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestions.swift; sourceTree = "<group>"; };
+		4D68266F2CFF2BFD00B1A12E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4D6826712CFF36B800B1A12E /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
+		4D6826732CFF389400B1A12E /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		4DB84B8D2CF2EBC5005E020F /* design-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB84B902CF2EBC5005E020F /* design_codeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_codeApp.swift; sourceTree = "<group>"; };
 		4DB84B942CF2EBC6005E020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,9 +208,11 @@
 		4DB84BD32CF34252005E020F /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				4D6826732CFF389400B1A12E /* AngularButtonStyle.swift */,
 				4DB84BBC2CF2EC01005E020F /* Styles.swift */,
 				4DB84BDD2CF60B5E005E020F /* AnimatableFontModifier.swift */,
 				4DB84BE92CFC5601005E020F /* Animations.swift */,
+				4D6826712CFF36B800B1A12E /* InputStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 				4DB84BD02CF33FA8005E020F /* HomeView.swift */,
 				4DB84BE52CFC412B005E020F /* CourseView.swift */,
 				4D68266B2CFDD84E00B1A12E /* SearchView.swift */,
+				4D68266F2CFF2BFD00B1A12E /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,10 +391,13 @@
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
 				4D68266E2CFDE06300B1A12E /* suggestions.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
+				4D6826702CFF2BFD00B1A12E /* SignUpView.swift in Sources */,
 				4DB84BC12CF2EF03005E020F /* ProfileView.swift in Sources */,
 				4DB84BE02CF6129D005E020F /* Course.swift in Sources */,
+				4D6826722CFF36B800B1A12E /* InputStyle.swift in Sources */,
 				4DB84BE62CFC412B005E020F /* CourseView.swift in Sources */,
 				4DB84BBD2CF2EC01005E020F /* Styles.swift in Sources */,
+				4D6826742CFF389400B1A12E /* AngularButtonStyle.swift in Sources */,
 				4DB84BE22CFC2BDB005E020F /* MatchedView.swift in Sources */,
 				4DB84BC62CF301F3005E020F /* PracticeView.swift in Sources */,
 				4DB84BDC2CF34E55005E020F /* PreferenceKeys.swift in Sources */,

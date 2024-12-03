@@ -3,6 +3,16 @@
     {
       "filename" : "Blob 1.pdf",
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Blob 1 Dark.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {

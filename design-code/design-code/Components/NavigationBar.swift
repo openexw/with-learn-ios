@@ -12,6 +12,7 @@ struct NavigationBar: View {
     @Binding var hasScrolled:Bool
     @State var showSearch = false
     @State var showProfile = false
+    @AppStorage("showModal") var showModal = false
     
     var body: some View {
         ZStack {
@@ -21,8 +22,8 @@ struct NavigationBar: View {
                 .opacity(hasScrolled ? 1 : 0)
             
             Text(title)
-//                .font(.largeTitle.weight(.bold))
-//                .modifier(AnimatableFontModifier(size: hasScrolled ? 22 : 35))
+            //                .font(.largeTitle.weight(.bold))
+            //                .modifier(AnimatableFontModifier(size: hasScrolled ? 22 : 35))
                 .animatableFont(size: hasScrolled ? 22 : 34, weight: .bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 20)
@@ -45,7 +46,10 @@ struct NavigationBar: View {
                 }
                 
                 Button{
-                    showProfile = true
+                    //                    showProfile = true
+                    withAnimation {
+                        showModal = true
+                    }
                 } label:  {
                     Image("Avatar Default")
                         .resizable()
@@ -53,7 +57,7 @@ struct NavigationBar: View {
                         .cornerRadius(10)
                         .padding(8)
                         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    .strokeStyle(cornerRadius: 18)
+                        .strokeStyle(cornerRadius: 18)
                 }
                 .sheet(isPresented: $showProfile, content: {
                     ProfileView()
