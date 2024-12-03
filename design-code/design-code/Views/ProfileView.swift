@@ -14,6 +14,7 @@ import SwiftUI
 struct ProfileView: View {
     @State var isDeleted:Bool = false
     @State var isPin:Bool = false
+    @Environment(\.presentationMode) var presentationMode
     
     var profile: some View {
         VStack(spacing: 8){
@@ -122,9 +123,13 @@ struct ProfileView: View {
                 menu
                 website
             }
+            .listStyle(.insetGrouped)
+            .navigationTitle("Account")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button{presentationMode.wrappedValue.dismiss()} label: {
+                Text("Done")
+            })
         }
-        .listStyle(.insetGrouped)
-        .navigationTitle("Account")
     }
     
     var pinBtn: some View {

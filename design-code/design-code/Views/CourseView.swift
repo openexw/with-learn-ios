@@ -25,7 +25,10 @@ struct CourseView: View {
                     .padding(.bottom, 200) // 设置下边距（有 tabbar）
                     .opacity( appear[2] ? 1 : 0)
             }
+            .coordinateSpace(name: "scroll")
             .background(Color("Background"))
+            .onAppear { model.showDetial = true }
+            .onDisappear { model.showDetial = false }
             // 设置右滑后的背景以及主体
             .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous)) // 主体设置为圆角
             .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10) // 设置主体阴影
@@ -216,5 +219,5 @@ struct CourseView: View {
 
 #Preview {
     @Namespace var namespace
-    return CourseView(namespace: namespace,course: courses[0], show: .constant(true))
+    return CourseView(namespace: namespace,course: courses[0], show: .constant(true)).environmentObject(Model())
 }

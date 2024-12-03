@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D68266C2CFDD84E00B1A12E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68266B2CFDD84E00B1A12E /* SearchView.swift */; };
+		4D68266E2CFDE06300B1A12E /* suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68266D2CFDE06300B1A12E /* suggestions.swift */; };
 		4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84B902CF2EBC5005E020F /* design_codeApp.swift */; };
 		4DB84B952CF2EBC6005E020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B942CF2EBC6005E020F /* Assets.xcassets */; };
 		4DB84B982CF2EBC6005E020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B972CF2EBC6005E020F /* Preview Assets.xcassets */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D68266B2CFDD84E00B1A12E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4D68266D2CFDE06300B1A12E /* suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestions.swift; sourceTree = "<group>"; };
 		4DB84B8D2CF2EBC5005E020F /* design-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB84B902CF2EBC5005E020F /* design_codeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_codeApp.swift; sourceTree = "<group>"; };
 		4DB84B942CF2EBC6005E020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				4DB84BDB2CF34E55005E020F /* PreferenceKeys.swift */,
 				4DB84BDF2CF6129D005E020F /* Course.swift */,
 				4DB84BEB2CFC7380005E020F /* Model.swift */,
+				4D68266D2CFDE06300B1A12E /* suggestions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				4DB84BBE2CF2EC09005E020F /* AccountView.swift */,
 				4DB84BD02CF33FA8005E020F /* HomeView.swift */,
 				4DB84BE52CFC412B005E020F /* CourseView.swift */,
+				4D68266B2CFDD84E00B1A12E /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,7 +378,9 @@
 				4DB84BE42CFC3D88005E020F /* CourseItem.swift in Sources */,
 				4DB84BCB2CF31DA1005E020F /* ExpHomeView.swift in Sources */,
 				4DB84BE82CFC4914005E020F /* StateBar.swift in Sources */,
+				4D68266C2CFDD84E00B1A12E /* SearchView.swift in Sources */,
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
+				4D68266E2CFDE06300B1A12E /* suggestions.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
 				4DB84BC12CF2EF03005E020F /* ProfileView.swift in Sources */,
 				4DB84BE02CF6129D005E020F /* Course.swift in Sources */,

@@ -13,6 +13,8 @@ struct HomeView: View {
     @State var show = false
     @State var showStatusBar = false
     @State var selectedId:UUID = UUID()
+    @State var showDetail = false
+    @State var featureSelectedIdx = 0
     @EnvironmentObject var model: Model
     
     var body: some View {
@@ -67,7 +69,7 @@ struct HomeView: View {
                 }
             }
             if show {
-               detail
+                detail
             }
         }
     }
@@ -92,9 +94,9 @@ struct HomeView: View {
     }
     var featured:some View {
         TabView{
-            ForEach(featuredCourses) { course in
+            ForEach(Array(featuredCourses.enumerated()), id:\.offset) { index,course in
                 GeometryReader { proxy in // 使用 GeometryReader 后会导致检测的区域只包含 FeatureItem 这个容器，需要通过设置 padding 来增加容器
-                    let minX = proxy.frame(in: .global).minX
+                    let minX = proxy.frame(in: .named("home")).minX
                     FeatureItem(course: course)
                         .frame(maxWidth: 500)
                         .frame(maxWidth: .infinity)
@@ -112,7 +114,10 @@ struct HomeView: View {
                                 .offset(x: 32, y: -100)
                                 .offset(x: minX / 2)
                         )
-                    
+                        .onTapGesture {
+                            showDetail = true
+                            featureSelectedIdx = index
+                        }
                         .shadow(color:Color("Shadow").opacity(0.3),radius: 10, x: 0, y:10)
                     //                    Text("\(proxy.frame(in: .global).minX/10)")
                 }
@@ -121,6 +126,9 @@ struct HomeView: View {
         .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 430)
         .background(Image("Blob 1").offset(x:250, y:-100))
+        .sheet(isPresented: $showDetail, content: {
+            CourseView(namespace: namespace, course: featuredCourses[featureSelectedIdx],show: $showDetail)
+        })
     }
     
     var cards: some View {

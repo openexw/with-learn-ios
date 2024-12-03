@@ -10,4 +10,5 @@ import Combine
 
 class Model : ObservableObject {
     @Published var showDetial: Bool = false
+    
 }
