@@ -14,6 +14,7 @@
 		4D6826742CFF389400B1A12E /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6826732CFF389400B1A12E /* AngularButtonStyle.swift */; };
 		4D6826762D00791D00B1A12E /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6826752D00791D00B1A12E /* SigninView.swift */; };
 		4D6826782D0079E100B1A12E /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6826772D0079E100B1A12E /* ModalView.swift */; };
+		4D68267B2D0089C200B1A12E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68267A2D0089C200B1A12E /* AvatarView.swift */; };
 		4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB84B902CF2EBC5005E020F /* design_codeApp.swift */; };
 		4DB84B952CF2EBC6005E020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B942CF2EBC6005E020F /* Assets.xcassets */; };
 		4DB84B982CF2EBC6005E020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB84B972CF2EBC6005E020F /* Preview Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		4D6826732CFF389400B1A12E /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		4D6826752D00791D00B1A12E /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		4D6826772D0079E100B1A12E /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		4D68267A2D0089C200B1A12E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		4DB84B8D2CF2EBC5005E020F /* design-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB84B902CF2EBC5005E020F /* design_codeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_codeApp.swift; sourceTree = "<group>"; };
 		4DB84B942CF2EBC6005E020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		4DB84BD62CF342A2005E020F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4D68267A2D0089C200B1A12E /* AvatarView.swift */,
 				4DB84BD72CF34449005E020F /* FeatureItem.swift */,
 				4DB84BD92CF3461F005E020F /* NavigationBar.swift */,
 				4DB84BE32CFC3D88005E020F /* CourseItem.swift */,
@@ -403,6 +406,7 @@
 				4DB84BE82CFC4914005E020F /* StateBar.swift in Sources */,
 				4D68266C2CFDD84E00B1A12E /* SearchView.swift in Sources */,
 				4DB84B912CF2EBC5005E020F /* design_codeApp.swift in Sources */,
+				4D68267B2D0089C200B1A12E /* AvatarView.swift in Sources */,
 				4D68266E2CFDE06300B1A12E /* suggestions.swift in Sources */,
 				4DB84BBB2CF2EBF8005E020F /* ContentView.swift in Sources */,
 				4D6826702CFF2BFD00B1A12E /* SignUpView.swift in Sources */,
