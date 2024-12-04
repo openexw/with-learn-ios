@@ -13,6 +13,7 @@ struct NavigationBar: View {
     @State var showSearch = false
     @State var showProfile = false
     @AppStorage("showModal") var showModal = false
+    @AppStorage("isLogged") var isLogined = false
     
     var body: some View {
         ZStack {
@@ -46,9 +47,12 @@ struct NavigationBar: View {
                 }
                 
                 Button{
-                    //                    showProfile = true
-                    withAnimation {
-                        showModal = true
+                    if isLogined {
+                        showProfile = true
+                    }else{
+                        withAnimation {
+                            showModal = true
+                        }
                     }
                 } label:  {
                     AvatarView()

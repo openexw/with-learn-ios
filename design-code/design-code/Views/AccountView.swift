@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountView: View {
     @State var isDeleted = false
     @State var isPinned = false
+    @AppStorage("isLogged") var isLogined = false
     
     var body: some View {
         NavigationView{
@@ -20,7 +21,12 @@ struct AccountView: View {
                 
                 btnGroup
                 
-                draw
+//                draw
+                Button {
+                    isLogined = false
+                } label: {
+                    Text("Login Out")
+                }.tint(.red)
             }
         }
         .listStyle(.insetGrouped)
