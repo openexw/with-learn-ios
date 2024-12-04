@@ -20,6 +20,7 @@ struct SignUpView: View {
     @State var circleColor: Color = .blue
     @State var emailY: CGFloat = 120
     @State var passwordY: CGFloat = 120
+    @EnvironmentObject var model:Model
     
     var body: some View {
         VStack{
@@ -68,7 +69,9 @@ struct SignUpView: View {
                 Divider()
                 HStack{
                     Text("Already have an account? ")
-                    Button {} label: {
+                    Button {
+                        model.selectedModal = .signIn
+                    } label: {
                         Text("Sign in")
                     }
                 }
@@ -88,8 +91,6 @@ struct SignUpView: View {
         .strokeStyle(cornerRadius: 30)
         .coordinateSpace(name: "container")
         .shadow(color: Color("Shadow").opacity(0.2), radius:30, x: 0, y: 30)
-        .padding(20)
-        .background(Image("Blob 1").offset(x: 200, y:-100))
         .onChange(of: focusedField) { _,value in
             withAnimation {
                 if value == .email {
@@ -111,5 +112,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView().environmentObject(Model())
 }
