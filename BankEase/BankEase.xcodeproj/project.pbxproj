@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DC816602D2832D700256B10 /* BankEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8165F2D2832D700256B10 /* BankEaseApp.swift */; };
+		4DC816622D2832D700256B10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816612D2832D700256B10 /* ContentView.swift */; };
+		4DC816642D2832D800256B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC816632D2832D800256B10 /* Assets.xcassets */; };
+		4DC816672D2832D800256B10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC816662D2832D800256B10 /* Preview Assets.xcassets */; };
+		4DC8166F2D28377200256B10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8166E2D28377200256B10 /* HomeView.swift */; };
+		4DC816712D28378900256B10 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816702D28378900256B10 /* SearchView.swift */; };
+		4DC816732D28379C00256B10 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816722D28379C00256B10 /* MessageView.swift */; };
+		4DC816752D2837A600256B10 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816742D2837A600256B10 /* SettingView.swift */; };
+		4DC816782D28407700256B10 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816772D28407700256B10 /* Badge.swift */; };
+		4DC8167A2D296F7F00256B10 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816792D296F7F00256B10 /* CreditCardView.swift */; };
+		4DC8167C2D2997AD00256B10 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8167B2D2997AD00256B10 /* MenuItem.swift */; };
+		4DC8167F2D2A3DB000256B10 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8167E2D2A3DB000256B10 /* menu.swift */; };
+		4DC816812D2AA14700256B10 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816802D2AA14700256B10 /* search.swift */; };
+		4DC816832D2AA22200256B10 /* SearchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816822D2AA22200256B10 /* SearchCardView.swift */; };
+		4DC816852D2AA99800256B10 /* BranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816842D2AA99800256B10 /* BranchView.swift */; };
+		4DC816872D2AAA8800256B10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816862D2AAA8800256B10 /* MapView.swift */; };
+		4DC8168A2D2AB4A000256B10 /* InterestRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC816892D2AB4A000256B10 /* InterestRateView.swift */; };
+		4DC8168C2D2AB4B100256B10 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8168B2D2AB4B100256B10 /* ExchangeRateView.swift */; };
+		4DC8168E2D2AB4BD00256B10 /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8168D2D2AB4BD00256B10 /* ExchangeView.swift */; };
+		4DC816902D2AB6AD00256B10 /* BranchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8168F2D2AB6AD00256B10 /* BranchItemView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DC8165C2D2832D700256B10 /* BankEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC8165F2D2832D700256B10 /* BankEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankEaseApp.swift; sourceTree = "<group>"; };
+		4DC816612D2832D700256B10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DC816632D2832D800256B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DC816662D2832D800256B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DC8166E2D28377200256B10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DC816702D28378900256B10 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4DC816722D28379C00256B10 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		4DC816742D2837A600256B10 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		4DC816772D28407700256B10 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		4DC816792D296F7F00256B10 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		4DC8167B2D2997AD00256B10 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4DC8167E2D2A3DB000256B10 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		4DC816802D2AA14700256B10 /* search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
+		4DC816822D2AA22200256B10 /* SearchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardView.swift; sourceTree = "<group>"; };
+		4DC816842D2AA99800256B10 /* BranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchView.swift; sourceTree = "<group>"; };
+		4DC816862D2AAA8800256B10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4DC816892D2AB4A000256B10 /* InterestRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestRateView.swift; sourceTree = "<group>"; };
+		4DC8168B2D2AB4B100256B10 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
+		4DC8168D2D2AB4BD00256B10 /* ExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeView.swift; sourceTree = "<group>"; };
+		4DC8168F2D2AB6AD00256B10 /* BranchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchItemView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC816592D2832D700256B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DC816532D2832D700256B10 = {
+			isa = PBXGroup;
+			children = (
+				4DC8165E2D2832D700256B10 /* BankEase */,
+				4DC8165D2D2832D700256B10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC8165D2D2832D700256B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8165C2D2832D700256B10 /* BankEase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC8165E2D2832D700256B10 /* BankEase */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8167D2D2A3D9900256B10 /* Models */,
+				4DC816762D28405F00256B10 /* Compoents */,
+				4DC8166D2D28376000256B10 /* Views */,
+				4DC8165F2D2832D700256B10 /* BankEaseApp.swift */,
+				4DC816612D2832D700256B10 /* ContentView.swift */,
+				4DC816632D2832D800256B10 /* Assets.xcassets */,
+				4DC816652D2832D800256B10 /* Preview Content */,
+			);
+			path = BankEase;
+			sourceTree = "<group>";
+		};
+		4DC816652D2832D800256B10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DC816662D2832D800256B10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DC8166D2D28376000256B10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DC816882D2AB47E00256B10 /* Searchs */,
+				4DC8166E2D28377200256B10 /* HomeView.swift */,
+				4DC816702D28378900256B10 /* SearchView.swift */,
+				4DC816722D28379C00256B10 /* MessageView.swift */,
+				4DC816742D2837A600256B10 /* SettingView.swift */,
+				4DC816792D296F7F00256B10 /* CreditCardView.swift */,
+				4DC8167B2D2997AD00256B10 /* MenuItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DC816762D28405F00256B10 /* Compoents */ = {
+			isa = PBXGroup;
+			children = (
+				4DC816862D2AAA8800256B10 /* MapView.swift */,
+				4DC816772D28407700256B10 /* Badge.swift */,
+			);
+			path = Compoents;
+			sourceTree = "<group>";
+		};
+		4DC8167D2D2A3D9900256B10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8167E2D2A3DB000256B10 /* menu.swift */,
+				4DC816802D2AA14700256B10 /* search.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4DC816882D2AB47E00256B10 /* Searchs */ = {
+			isa = PBXGroup;
+			children = (
+				4DC816842D2AA99800256B10 /* BranchView.swift */,
+				4DC816822D2AA22200256B10 /* SearchCardView.swift */,
+				4DC816892D2AB4A000256B10 /* InterestRateView.swift */,
+				4DC8168B2D2AB4B100256B10 /* ExchangeRateView.swift */,
+				4DC8168D2D2AB4BD00256B10 /* ExchangeView.swift */,
+				4DC8168F2D2AB6AD00256B10 /* BranchItemView.swift */,
+			);
+			path = Searchs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC8165B2D2832D700256B10 /* BankEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC8166A2D2832D800256B10 /* Build configuration list for PBXNativeTarget "BankEase" */;
+			buildPhases = (
+				4DC816582D2832D700256B10 /* Sources */,
+				4DC816592D2832D700256B10 /* Frameworks */,
+				4DC8165A2D2832D700256B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankEase;
+			productName = BankEase;
+			productReference = 4DC8165C2D2832D700256B10 /* BankEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC816542D2832D700256B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4DC8165B2D2832D700256B10 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DC816572D2832D700256B10 /* Build configuration list for PBXProject "BankEase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DC816532D2832D700256B10;
+			productRefGroup = 4DC8165D2D2832D700256B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC8165B2D2832D700256B10 /* BankEase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC8165A2D2832D700256B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC816672D2832D800256B10 /* Preview Assets.xcassets in Resources */,
+				4DC816642D2832D800256B10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC816582D2832D700256B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC8167F2D2A3DB000256B10 /* menu.swift in Sources */,
+				4DC816782D28407700256B10 /* Badge.swift in Sources */,
+				4DC816852D2AA99800256B10 /* BranchView.swift in Sources */,
+				4DC816832D2AA22200256B10 /* SearchCardView.swift in Sources */,
+				4DC816712D28378900256B10 /* SearchView.swift in Sources */,
+				4DC816902D2AB6AD00256B10 /* BranchItemView.swift in Sources */,
+				4DC8166F2D28377200256B10 /* HomeView.swift in Sources */,
+				4DC816622D2832D700256B10 /* ContentView.swift in Sources */,
+				4DC816872D2AAA8800256B10 /* MapView.swift in Sources */,
+				4DC816812D2AA14700256B10 /* search.swift in Sources */,
+				4DC816752D2837A600256B10 /* SettingView.swift in Sources */,
+				4DC816602D2832D700256B10 /* BankEaseApp.swift in Sources */,
+				4DC8168C2D2AB4B100256B10 /* ExchangeRateView.swift in Sources */,
+				4DC8168E2D2AB4BD00256B10 /* ExchangeView.swift in Sources */,
+				4DC8167C2D2997AD00256B10 /* MenuItem.swift in Sources */,
+				4DC816732D28379C00256B10 /* MessageView.swift in Sources */,
+				4DC8168A2D2AB4A000256B10 /* InterestRateView.swift in Sources */,
+				4DC8167A2D296F7F00256B10 /* CreditCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DC816682D2832D800256B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DC816692D2832D800256B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DC8166B2D2832D800256B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BankEase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ra6n.bankease.BankEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DC8166C2D2832D800256B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BankEase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ra6n.bankease.BankEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC816572D2832D700256B10 /* Build configuration list for PBXProject "BankEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC816682D2832D800256B10 /* Debug */,
+				4DC816692D2832D800256B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC8166A2D2832D800256B10 /* Build configuration list for PBXNativeTarget "BankEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC8166B2D2832D800256B10 /* Debug */,
+				4DC8166C2D2832D800256B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC816542D2832D700256B10 /* Project object */;
+}
